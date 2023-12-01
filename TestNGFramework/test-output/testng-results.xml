@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-26T14:48:12 EST" name="Smoke" finished-at="2023-11-26T14:48:27 EST" duration-ms="15126">
+    <groups>
+    </groups>
+    <test started-at="2023-11-26T14:48:12 EST" name="RandomScenarios" finished-at="2023-11-26T14:48:27 EST" duration-ms="15126">
+      <class name="com.testng.tests.RandomScenariosTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:12 EST" name="beforeMethod" finished-at="2023-11-26T14:48:16 EST" duration-ms="3154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TabCustomization()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:16 EST" name="TabCustomization" finished-at="2023-11-26T14:48:21 EST" duration-ms="5615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TabCustomization -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:21 EST" name="teardown" finished-at="2023-11-26T14:48:22 EST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:22 EST" name="beforeMethod" finished-at="2023-11-26T14:48:23 EST" duration-ms="1532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verificationofTabbar()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:23 EST" name="verificationofTabbar" finished-at="2023-11-26T14:48:27 EST" duration-ms="3814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationofTabbar -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testng.tests.RandomScenariosTest@4218d6a3]" started-at="2023-11-26T14:48:27 EST" name="teardown" finished-at="2023-11-26T14:48:27 EST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.testng.tests.RandomScenariosTest -->
+    </test> <!-- RandomScenarios -->
+  </suite> <!-- Smoke -->
+</testng-results>
