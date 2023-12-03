@@ -200,6 +200,7 @@ public class RandomScenariosPage extends BasePage {
 		recurrence.click();
 	}
 	public void clickWeeklyRadioButton() {
+		// Added the comment for testing GIT
 		weeeklyradiobutton.click();
 	}
 	public void checkRecursEvery() {
