@@ -18,6 +18,8 @@ public class LoginSalesforcePage extends BasePage {
 	WebElement password;
 	@FindBy(id="Login")
 	WebElement login;
+	@FindBy(xpath="//img[@id='phHeaderLogoImage']")
+	WebElement logo;
 	@FindBy(xpath="//input[@class='r4 fl mr8']")
 	WebElement rememberme;
 	@FindBy(id="userNavLabel")
@@ -50,6 +52,9 @@ public class LoginSalesforcePage extends BasePage {
 	}
 	public void clickloginbutton(){
 		login.click();
+	}
+	public boolean checkloginsuccess() {
+		return logo.isDisplayed();
 	}
 	
 	public void remembermecheckbox() {

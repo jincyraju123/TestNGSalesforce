@@ -2,6 +2,7 @@ package com.testng.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -40,6 +41,7 @@ import com.testng.pages.LoginSalesforcePage;
 		loginpage.enterusername("jincy@raju.com");
 		loginpage.enterpassword("welcome123");
 		loginpage.clickloginbutton();
+		Assert.assertTrue(loginpage.checkloginsuccess());
 		Log.info("Successfully Logged");
 		Log.endTestCase("Login");
 	}

@@ -2539,3 +2539,6 @@
 2023-12-02 19:34:48,552 DEBUG [cache] TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found 
 2023-12-02 19:34:48,553 DEBUG [cache] TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found 
 2023-12-02 19:34:48,553 DEBUG [cache] Loading template for "logs-view/testrunner-logs-view.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/aventstack/extentreports/3.0.0/extentreports-3.0.0.jar!/com/aventstack/extentreports/view/logs-view/testrunner-logs-view.ftl" 
+2023-12-03 15:59:10,788 INFO  [Log] ****************           -S-T-A-R-T-Login       **************** 
+2023-12-03 15:59:14,222 INFO  [Log] Successfully Logged 
+2023-12-03 15:59:14,223 INFO  [Log] ***************             -E---N---D-Login         *************** 
