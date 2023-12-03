@@ -1,5 +1,8 @@
 package com.testng.tests;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -91,6 +94,33 @@ import com.testng.pages.usermenusalesforcePage;
 		loginpage.clickloginbutton();
 		usermenupage.clickusermenudropdown();
 		usermenupage.usermenuMySettingsCalenderandremainders();
+		 
+		  Set<String>handles=driver.getWindowHandles();
+			
+			Iterator<String> it = handles.iterator();
+			
+			String parentwindowhandle=it.next();
+			System.out.println("Parent window id  "+parentwindowhandle);
+			
+			String childwindowhandle=it.next();
+			System.out.println("Child window id  "+childwindowhandle);
+			
+			driver.switchTo().window(childwindowhandle);
+			
+			String childwindowtitle=driver.getTitle();
+			System.out.println("Title of the child window is  "+childwindowtitle);
+			
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+		
+	       driver.close();
+			
+			driver.switchTo().window(parentwindowhandle);
+			
 		Log.info("My Settings Calender and Remainders Testcases Passed");
 		Log.endTestCase("UsermenuMySettings");
 		
@@ -103,6 +133,33 @@ import com.testng.pages.usermenusalesforcePage;
 		loginpage.clickloginbutton();
 		usermenupage.clickusermenudropdown();
 		usermenupage.usermenuDeveloperConsole();
+		 
+		  Set<String>handles=driver.getWindowHandles();
+			
+			Iterator<String> it = handles.iterator();
+			
+			String parentwindowhandle=it.next();
+			System.out.println("Parent window id  "+parentwindowhandle);
+			
+			String childwindowhandle=it.next();
+			System.out.println("Child window id  "+childwindowhandle);
+			
+			driver.switchTo().window(childwindowhandle);
+			
+			String childwindowtitle=driver.getTitle();
+			System.out.println("Title of the child window is  "+childwindowtitle);
+			
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+		
+	       driver.close();
+			
+			driver.switchTo().window(parentwindowhandle);
+			
 		Log.info("Developer Console Testcases Passed");
 		Log.endTestCase("UsermenuDeveloperConsole");
 	}

@@ -15,21 +15,20 @@ public class RandomScenariosPage extends BasePage {
 		super(driver);
 		
 	}
-	@FindBy(id="home_Tab")
+	@FindBy(xpath="//a[normalize-space()='Home']")
 	WebElement hometab;
 	@FindBy(xpath="//h1[@class='currentStatusUserName']")
 	WebElement usernamelink;
 	
 	@FindBy(xpath="(//a[text()='Jincy Jinu George'])[1]")
 	WebElement nameLink;
-	@FindBy(id="userNavLabel")
+	@FindBy(xpath="//span[@id='userNavLabel']")
 	WebElement usernamedropdown;
 	@FindBy(xpath="//a[text()='My Profile']")
 	WebElement myprofile;
-	@FindBy(id="tailBreadcrumbNode")
-	WebElement myprofilepage;
 	
-	@FindBy(xpath="(//span[text()='Jincy Jinu'])[2]")
+	
+	@FindBy(xpath="(//span[text()='Jincy Raju'])[2]")
 	WebElement FirstnameLastnamelink;
 	@FindBy(xpath="//a[@class='contactInfoLaunch editLink']")
 	WebElement editprofilebutton;
@@ -42,7 +41,7 @@ public class RandomScenariosPage extends BasePage {
 	@FindBy(xpath="//input[@value='Save All']")
 	WebElement saveallbutton;
 	
-	@FindBy(xpath="//img[@class='allTabsArrow']")
+	@FindBy(xpath="//img[@title='All Tabs']")
 	WebElement tabsArrow;
 	@FindBy(name="customize")
 	WebElement customizeMyTabsbutton;
@@ -56,6 +55,46 @@ public class RandomScenariosPage extends BasePage {
 	WebElement Logout;
 	@FindBy(id="tabBar")
 	List<WebElement>tabspresent;
+	
+	@FindBy(xpath="(//a[contains(text(),'2023')])[1]")
+	WebElement datelink;
+	@FindBy(xpath="//a[contains(text(),'8:00 PM')]")
+	WebElement eightpmlink;
+	@FindBy(xpath="//img[@alt='Subject Combo (New Window)']")
+	WebElement subjectcomboicon;
+	@FindBy(xpath="//a[text()='Other']")
+	WebElement otherfromdropdown;
+	@FindBy(id="EndDateTime_time")
+	WebElement endtimefield;
+	@FindBy(xpath="//div[text()='9:00 PM']")
+	WebElement ninepm;
+	@FindBy(name="save")
+	WebElement save;
+	@FindBy(xpath="//div[@class='multiLineEventBlock dragContentPointer']")
+	WebElement eventblock;
+	
+	@FindBy(xpath="//a[contains(text(),'4:00 PM')]")
+	WebElement fourpmlink;
+	@FindBy(xpath="//div[text()='7:00 PM']")
+	WebElement enddate7pm;
+	@FindBy(id="IsRecurrence")
+	WebElement recurrence;
+	@FindBy(id="rectypeftw")
+	WebElement weeeklyradiobutton;
+	@FindBy(id="wi")
+	WebElement recurseevery;
+	@FindBy(id="RecurrenceEndDateOnly")
+	WebElement recurrenceenddate;
+	@FindBy(xpath="(//input[@name='save'])[2]")
+	WebElement buttonsave;
+	@FindBy(xpath="//h1[normalize-space()='Calendar for Jincy Jinu - Day View']")
+	WebElement calenderpage;
+	@FindBy(xpath="//div[@id='p:f:j_id25:j_id69:20:j_id71:0:j_id72:calendarEvent:i']//div[@class='multiLineEventBlock dragContentPointer']")
+	WebElement othereventintimeslot;
+	@FindBy(xpath="//img[@alt='Month View']")
+	WebElement monthview;
+	@FindBy(xpath="//h1[normalize-space()='Calendar for Jincy Jinu - Month View']")
+	WebElement monthviewpage;
 	
 	
 	
@@ -76,9 +115,7 @@ public class RandomScenariosPage extends BasePage {
 	public void clickMyProfile() {
 		myprofile.click();
 	}
-	public void checkmyProfilePageisdisplayed() {
-		myprofilepage.isDisplayed();
-	}
+	
 	public void clickfirstNameLastnameLink() {
 		FirstnameLastnamelink.click();
 	}
@@ -101,9 +138,6 @@ public class RandomScenariosPage extends BasePage {
 		saveallbutton.click();
 	}
 	
-	//public void verifyUsermenuName() {
-	//	comparetext(usernamedropdown.getText(), "Jincy Jinu");
-	//}
 	
 	public void clickalltabplusbutton(){
 		tabsArrow.click();
@@ -114,7 +148,7 @@ public class RandomScenariosPage extends BasePage {
 	public void selectAnyTabFromSelectedTabs() {
 		
 		Select selectedtabs=new Select(dropdownSelectedtabs);
-		selectedtabs.selectByVisibleText("Accounts");
+		selectedtabs.selectByVisibleText("Leads");
 	}
 	public void clickRemove() {
 		removebutton.click();
@@ -131,7 +165,64 @@ public class RandomScenariosPage extends BasePage {
 			System.out.println(tab.getText());
 		}
 	}
+	public void clickDateLink() {
+			datelink.click();
+		}
+	public void clickEightPMLink() {
+		eightpmlink.click();
+	}
+	public void clickSubjectComboIcon() {
+		subjectcomboicon.click();
+	}
+	public void clickOther() {
+		otherfromdropdown.click();
+	}
+	public void endTimeField() {
+		endtimefield.click();
+	}
+	public void clickNinePM() {
+		ninepm.click();
+	}
+	public void clickSaveButton() {
+		save.click();
+	}
+	public void CheckeventIsDisplayed() {
+		eventblock.isDisplayed();
+	}
+	public void clickFourPMLink() {
+		fourpmlink.click();
+	}
+	public void clickEnddate7Pm() {
+		enddate7pm.click();
+		
+	}
+	public void clickrecurrence() {
+		recurrence.click();
+	}
+	public void clickWeeklyRadioButton() {
+		weeeklyradiobutton.click();
+	}
+	public void checkRecursEvery() {
+		
+		System.out.println("Recurs every displayed as  "+recurseevery.getAttribute("value"));
+	}
+	public void recurrenceEndDate() {
+		recurrenceenddate.sendKeys("12/23/2023");
+	}
+	public void clickOnsave() {
+		buttonsave.click();
+		
+	}
 	
+	public void checkotherEventDisplayedInTimeslot() {
+		othereventintimeslot.isDisplayed();
+	}
+	public void clickMonthView() {
+		monthview.click();
+	}
 	
 
-}
+	}
+	
+
+

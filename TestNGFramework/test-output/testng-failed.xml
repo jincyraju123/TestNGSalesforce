@@ -9,8 +9,8 @@
       <class name="com.testng.tests.RandomScenariosTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="TabCustomization"/>
           <include name="teardown"/>
+          <include name="EventInTheCalenderWithWeeklyRecurrence"/>
         </methods>
       </class> <!-- com.testng.tests.RandomScenariosTest -->
     </classes>

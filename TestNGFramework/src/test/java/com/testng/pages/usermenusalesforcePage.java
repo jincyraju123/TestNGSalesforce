@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -44,6 +44,27 @@ import com.testng.base.BasePage;
 	WebElement posttextfield;
 	@FindBy(id="publishersharebutton")
 	WebElement sharebutton;
+	//file upload
+	@FindBy(xpath="//span[normalize-space()='File']")
+	WebElement filelink;
+	@FindBy(xpath="//a[@id='chatterUploadFileAction']")
+	WebElement uploadfile;
+	@FindBy(xpath="//input[@id='chatterFile']")
+	WebElement choosefile;
+	// photo upload
+	@FindBy(xpath="//span[@class='profileImage chatter-avatarFull chatter-avatar']//img[@title='Jincy Jinu']")
+	WebElement photoimage;
+	@FindBy(xpath="//a[@id='uploadLink']")
+	WebElement addphoto;
+	@FindBy(xpath="//iframe[@id='uploadPhotoContentId']")
+	WebElement uploadphotoframe;
+	@FindBy(xpath="//input[@id='j_id0:uploadFileForm:uploadInputFile']")
+	WebElement choosefilephoto;
+	@FindBy(xpath="//input[@id='j_id0:uploadFileForm:uploadBtn']")
+	WebElement uploadsavebutton;
+	@FindBy(xpath="//input[@id='j_id0:j_id7:save']")
+	WebElement savebutton1;
+	
 	//My Settings
 	@FindBy(xpath="//a[@title='My Settings']")
 	WebElement mysettingsoption;
@@ -118,6 +139,19 @@ import com.testng.base.BasePage;
 		posttextfield.sendKeys("Welcome to TestNG");
 		SwitchTodefaultcontent();
 		sharebutton.click();
+		filelink.click();
+		uploadfile.click();
+		choosefile.click();
+		waitforelement(sharebutton);
+		sharebutton.click();
+		waitforelement(photoimage);
+		actionclass(photoimage);
+		addphoto.click();
+		SwitchToFrame(uploadphotoframe);
+		choosefilephoto.sendKeys("C:\\Users\\Administrator\\Downloads\\Image.jpg");
+		uploadsavebutton.click();
+		waitforelement(savebutton1);
+		savebutton1.click();
 	}
 	public void usermenuMySettingsPersonal() {
 		
@@ -164,13 +198,12 @@ import com.testng.base.BasePage;
 			
 			e.printStackTrace();
 		}
-		getwindowhandle();
+
 		
 	}
 	public void usermenuDeveloperConsole() {
 		
 		DeveloperConsole.click();
-		getwindowhandle();
 	}
 	public void usermenuLogout() {
 		

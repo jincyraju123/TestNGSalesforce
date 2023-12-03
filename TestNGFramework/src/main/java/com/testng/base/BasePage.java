@@ -1,10 +1,13 @@
 package com.testng.base;
 
-import java.util.Iterator;
-import java.util.Set;
+
+
+
+import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -44,40 +47,22 @@ public class BasePage {
 	  System.out.println("Title of the current Page is : "+driver.getTitle());
   }
   
-  public void getwindowhandle() {
-	  
-	  Set<String>handles=driver.getWindowHandles();
-		
-		Iterator<String> it = handles.iterator();
-		
-		String parentwindowhandle=it.next();
-		System.out.println("Parent window id  "+parentwindowhandle);
-		
-		String childwindowhandle=it.next();
-		System.out.println("Child window id  "+childwindowhandle);
-		
-		driver.switchTo().window(childwindowhandle);
-		
-		String childwindowtitle=driver.getTitle();
-		System.out.println("Title of the child window is  "+childwindowtitle);
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
-		}
-	
-		
-       driver.close();
-		
-		driver.switchTo().window(parentwindowhandle);
-		
+  
+  
+  public void actionclass(WebElement element) {
+	  Actions actions=new Actions(driver);
+		actions.moveToElement(element).build().perform();
   }
+  
   public void comparetext(String actualtext,String expectedtext) {
 		
 		Assert.assertEquals(actualtext, expectedtext);
 	}
+  /*public String uniqueId() {
+	  Random ra=new Random();
+	  return String.valueOf(Math.abs(ra.nextInt()));
+  }*/
+  
   public void alert() {
 	  driver.switchTo().alert().accept();
   }

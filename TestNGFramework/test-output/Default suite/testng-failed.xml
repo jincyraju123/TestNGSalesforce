@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.tests.usermenusalesforcetest">
+      <class name="com.testng.tests.RandomScenariosTest">
         <methods>
-          <include name="beforemethod"/>
-          <include name="usermenudropdownMySettings"/>
+          <include name="beforeMethod"/>
+          <include name="HomeTabEditLastName"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.testng.tests.usermenusalesforcetest -->
+      </class> <!-- com.testng.tests.RandomScenariosTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
