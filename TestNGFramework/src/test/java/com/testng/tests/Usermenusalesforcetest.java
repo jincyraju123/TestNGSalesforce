@@ -14,7 +14,7 @@ import com.testng.log.Log;
 import com.testng.pages.LoginSalesforcePage;
 import com.testng.pages.usermenusalesforcePage;
 
-   public class usermenusalesforcetest extends BaseTest {
+   public class Usermenusalesforcetest extends BaseTest {
 	
 	WebDriver driver;
     usermenusalesforcePage usermenupage;

@@ -1,10 +1,5 @@
 package com.testng.base;
 
-
-
-
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -57,12 +52,7 @@ public class BasePage {
   public void comparetext(String actualtext,String expectedtext) {
 		
 		Assert.assertEquals(actualtext, expectedtext);
-	}
-  /*public String uniqueId() {
-	  Random ra=new Random();
-	  return String.valueOf(Math.abs(ra.nextInt()));
-  }*/
-  
+  }
   public void alert() {
 	  driver.switchTo().alert().accept();
   }

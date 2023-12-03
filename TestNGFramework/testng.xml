@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="tests">
+	<listeners>
+       <listener class-name="com.testng.listeners.TestListener"></listener>
+</listeners>
+<test name="Login">
+  <classes>
+  	<class name="com.testng.tests.Loginsalesforcetest"/>
+  </classes>
+ </test>
+ <test name="Usermenu">
+  <classes>
+  	<class name="com.testng.tests.Usermenusalesforcetest"/>
+  </classes>
+ </test>
+ <test name="Account">
+  <classes>
+  	<class name="com.testng.tests.AccountsTest"/>
+  </classes>
+ </test>
+ <test name="Opportunity">
+  <classes>
+  	<class name="com.testng.tests.OpportunitiesTest"/>
+  </classes>
+ </test>
+ <test name="Leads">
+  <classes>
+  	<class name="com.testng.tests.LeadsTest"/>
+  </classes>
+ </test>
+ <test name="Contacts">
+  <classes>
+  	<class name="com.testng.tests.ContactsTest"/>
+  </classes>
+ </test>
+ <test name="Randomscenarios">
+  <classes>
+  	<class name="com.testng.tests.RandomScenariosTest"/>
+  </classes>
+ </test>
+</suite>
