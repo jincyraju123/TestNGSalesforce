@@ -23,6 +23,9 @@ import com.testng.base.BasePage;
 	WebElement usermenudropdown;
 	@FindBy(id="userNav-menuItems")
 	List<WebElement> dropdownitems;
+	@FindBy(xpath="//a[@title='Switch to Lightning Experience']")
+	WebElement switchtolightning;
+	
 	//MyProfile
 	@FindBy(xpath="//a[text()='My Profile']")
 	WebElement myprofileoption;
@@ -123,6 +126,12 @@ import com.testng.base.BasePage;
 		for(WebElement menuitem:dropdownitems) {
 			System.out.println(menuitem.getText());
 			}
+		myprofileoption.isDisplayed();
+		mysettingsoption.isDisplayed();
+		DeveloperConsole.isDisplayed();
+		switchtolightning.isDisplayed();
+		Logout.isDisplayed();
+		
 	}
 	public void usermenuMyProfile() {
 		

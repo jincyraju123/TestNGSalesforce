@@ -2542,3 +2542,10 @@
 2023-12-03 15:59:10,788 INFO  [Log] ****************           -S-T-A-R-T-Login       **************** 
 2023-12-03 15:59:14,222 INFO  [Log] Successfully Logged 
 2023-12-03 15:59:14,223 INFO  [Log] ***************             -E---N---D-Login         *************** 
+2023-12-07 17:13:38,415 INFO  [Log] ****************           -S-T-A-R-T-Usermenu       **************** 
+2023-12-07 17:13:42,711 INFO  [Log] Usermenu dropdown items are present 
+2023-12-07 17:13:42,711 INFO  [Log] ***************             -E---N---D-Usermenu         *************** 
+2023-12-07 17:14:30,708 INFO  [Log] ****************           -S-T-A-R-T-Usermenu       **************** 
+2023-12-07 17:16:04,269 INFO  [Log] ****************           -S-T-A-R-T-Usermenu       **************** 
+2023-12-07 17:16:09,039 INFO  [Log] Usermenu dropdown items are present 
+2023-12-07 17:16:09,040 INFO  [Log] ***************             -E---N---D-Usermenu         *************** 
