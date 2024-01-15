@@ -8,11 +8,50 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,252</td><td></td><td></td></tr>
+<tr><th colspan="8">Smoke</th></tr>
+<tr><td><a href="#t0">Login</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,420</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Usermenu</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">107,956</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">12</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">142,376</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.testng.tests.Usermenusalesforcetest</td><td><a href="#m0">usermenudropdown</a></td><td rowspan="1">1701987364254</td><td rowspan="1">4786</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.testng.tests.Loginsalesforcetest</td><td><a href="#m0">checkrememberme</a></td><td rowspan="1">1705337757674</td><td rowspan="1">7882</td></tr><tr class="passedeven"><td><a href="#m1">forgotpassword</a></td><td rowspan="1">1705337767989</td><td rowspan="1">1030</td></tr><tr class="passedeven"><td><a href="#m2">invalidusernameandpassword</a></td><td rowspan="1">1705337771208</td><td rowspan="1">1448</td></tr><tr class="passedeven"><td><a href="#m3">loginapplication</a></td><td rowspan="1">1705337774760</td><td rowspan="1">3376</td></tr><tr class="passedeven"><td><a href="#m4">loginapplicationwithoutpassword</a></td><td rowspan="1">1705337780942</td><td rowspan="1">2118</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Usermenu &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testng.tests.Usermenusalesforcetest</td><td><a href="#m5">usermenudropdownMyProfile</a></td><td rowspan="1">1705337845777</td><td rowspan="1">10897</td></tr><tr><th colspan="4">Usermenu &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.testng.tests.Usermenusalesforcetest</td><td><a href="#m6">usermenuMySettingsCalenderandremainders</a></td><td rowspan="1">1705337757680</td><td rowspan="1">20593</td></tr><tr class="passedeven"><td><a href="#m7">usermenuMySettingsEmail</a></td><td rowspan="1">1705337781152</td><td rowspan="1">7521</td></tr><tr class="passedeven"><td><a href="#m8">usermenuMySettingsPersonal</a></td><td rowspan="1">1705337792187</td><td rowspan="1">15585</td></tr><tr class="passedeven"><td><a href="#m9">usermenuMySettingsdisplayandlayout</a></td><td rowspan="1">1705337813153</td><td rowspan="1">7012</td></tr><tr class="passedeven"><td><a href="#m10">usermenudropdown</a></td><td rowspan="1">1705337822150</td><td rowspan="1">4206</td></tr><tr class="passedeven"><td><a href="#m11">usermenudropdownDeveloperConsole</a></td><td rowspan="1">1705337828156</td><td rowspan="1">9724</td></tr><tr class="passedeven"><td><a href="#m12">usermenudropdownLogout</a></td><td rowspan="1">1705337839972</td><td rowspan="1">4219</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.testng.tests.Usermenusalesforcetest#usermenudropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m0">com.testng.tests.Loginsalesforcetest#checkrememberme</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testng.tests.Loginsalesforcetest#forgotpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testng.tests.Loginsalesforcetest#invalidusernameandpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testng.tests.Loginsalesforcetest#loginapplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testng.tests.Loginsalesforcetest#loginapplicationwithoutpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Usermenu</h2><h3 id="m5">com.testng.tests.Usermenusalesforcetest#usermenudropdownMyProfile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=120.0.6099.217)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MININT-86R5IFB&apos;, ip: &apos;172.16.0.71&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 334b09385d1c656e165f54cd8ecf8bc4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.testng.pages.usermenusalesforcePage.usermenuMyProfile(usermenusalesforcePage.java:153)
+	at com.testng.tests.Usermenusalesforcetest.usermenudropdownMyProfile(Usermenusalesforcetest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.testng.tests.Usermenusalesforcetest#usermenuMySettingsCalenderandremainders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.testng.tests.Usermenusalesforcetest#usermenuMySettingsEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.testng.tests.Usermenusalesforcetest#usermenuMySettingsPersonal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.testng.tests.Usermenusalesforcetest#usermenuMySettingsdisplayandlayout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.testng.tests.Usermenusalesforcetest#usermenudropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.testng.tests.Usermenusalesforcetest#usermenudropdownDeveloperConsole</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.testng.tests.Usermenusalesforcetest#usermenudropdownLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

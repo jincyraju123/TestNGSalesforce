@@ -56,7 +56,7 @@ public class RandomScenariosPage extends BasePage {
 	@FindBy(id="tabBar")
 	List<WebElement>tabspresent;
 	
-	@FindBy(xpath="(//a[contains(text(),'2023')])[1]")
+	@FindBy(xpath="//span[@class='pageDescription']/a")
 	WebElement datelink;
 	@FindBy(xpath="//a[contains(text(),'8:00 PM')]")
 	WebElement eightpmlink;

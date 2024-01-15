@@ -1,5 +1,8 @@
 package com.testng.pages;
 
+import java.util.Random;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -75,6 +78,11 @@ public class AccountsPage extends BasePage{
 	WebElement reportuniquename ;
 	@FindBy(xpath="//button[text()='Save and Run Report']")
 	WebElement saveandrun ;
+	@FindBy(xpath="//h2[normalize-space()='Report Generation Status:']")
+	WebElement reportgenerationstatus ;
+	
+	
+	
 	//Merge accounts
 	@FindBy(xpath="//a[text()='Merge Accounts']")
 	WebElement mergeAccounts ;
@@ -138,6 +146,7 @@ public class AccountsPage extends BasePage{
 		alert();
 	}
 	public void createaccountreport() {
+		
 		accountstab.click();
 		Lastactivity.click();
 		dropdownarrow.click();
@@ -147,11 +156,24 @@ public class AccountsPage extends BasePage{
 		To.click();
 		ToToday.click();
 		save3.click();
-		reportname.sendKeys("Jincy George");
-		reportuniquename.sendKeys("jincyg1");
+		
+		Random rand=new Random();
+		int random=rand.nextInt(100);
+		
+		reportname.sendKeys("Jincy"+random);
+		reportuniquename.clear();
+		reportuniquename.sendKeys("Jincy_5"+random);
 		waitforelement(saveandrun);
+		
+		//actionclass(saveandrun);
 		saveandrun.click();
+		
+		waitforelement(reportgenerationstatus);
+		
+		reportgenerationstatus.isDisplayed();
+		
 		gettitleofthepage();
+		
 	}
 
 }

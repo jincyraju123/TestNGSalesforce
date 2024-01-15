@@ -38,6 +38,7 @@ public class BaseTest {
 	public void takesscreenshot(WebDriver driver,String methodName) {
 		
 		TakesScreenshot screenshot=((TakesScreenshot)driver);
+		 
 		File srcfile=screenshot.getScreenshotAs(OutputType.FILE);
 		
 		Date current= new Date();

@@ -4,6 +4,12 @@
   <artifactId>TestNGFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+	  <maven.compiler.source>11</maven.compiler.source>
+	  <maven.compiler.target>11</maven.compiler.target>
+	  <suiteFile>login.xml</suiteFile>
+  </properties>
+  
   <dependencies>
 
 	<!--
@@ -56,7 +62,7 @@
     <configuration>
      <testFailureIgnore>true</testFailureIgnore>
      <suiteXmlFiles>
-      <suiteXmlFile>C:\Source\Workspaces\TestNGFramework\login.xml</suiteXmlFile>
+      <suiteXmlFile>${suiteFile}</suiteXmlFile>
      
      </suiteXmlFiles>
     </configuration>

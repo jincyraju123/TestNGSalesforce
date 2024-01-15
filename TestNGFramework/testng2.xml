@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="tests" thread-count="2">
+	<listeners>
+       <listener class-name="com.testng.listeners.TestListener"></listener>
+</listeners>
+<test name="Login">
+  <classes>
+  	<class name="com.testng.tests.Loginsalesforcetest"/>
+  </classes>
+ </test>
+ <test name="Usermenu">
+  <classes>
+  	<class name="com.testng.tests.Usermenusalesforcetest"/>
+  </classes>
+ </test>
+ </suite>

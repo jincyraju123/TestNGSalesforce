@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.tests.Usermenusalesforcetest">
+      <class name="com.testng.tests.AccountsTest">
         <methods>
-          <include name="usermenudropdown"/>
-          <include name="teardown"/>
+          <include name="createAccountReport"/>
           <include name="beforemethod"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testng.tests.Usermenusalesforcetest -->
+      </class> <!-- com.testng.tests.AccountsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

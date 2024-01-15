@@ -10,11 +10,10 @@ import com.testng.base.BasePage;
 public class ContactsPage extends BasePage {
 
 	public ContactsPage(WebDriver driver) {
-		super(driver);
 		
+		super(driver);
 	}
 	
-
 	@FindBy(id="Contact_Tab")
 	WebElement contactstab;
 

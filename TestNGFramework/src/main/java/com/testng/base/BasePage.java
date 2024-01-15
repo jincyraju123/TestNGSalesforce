@@ -1,5 +1,6 @@
 package com.testng.base;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -22,7 +23,7 @@ public class BasePage {
 	public void waitforelement(WebElement element) {
 		
 		WebDriverWait wait=new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
    
   public void SwitchToFrame(WebElement element) {
@@ -42,8 +43,6 @@ public class BasePage {
 	  System.out.println("Title of the current Page is : "+driver.getTitle());
   }
   
-  
-  
   public void actionclass(WebElement element) {
 	  Actions actions=new Actions(driver);
 		actions.moveToElement(element).build().perform();
@@ -54,8 +53,10 @@ public class BasePage {
 		Assert.assertEquals(actualtext, expectedtext);
   }
   public void alert() {
+	  
 	  driver.switchTo().alert().accept();
   }
+  
 	
 	
 }
