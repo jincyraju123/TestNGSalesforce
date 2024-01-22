@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.*;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -22,7 +22,20 @@ public class BaseTest {
 		if(driver==null) {
 			
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--no-sandbox");
+			chromeOptions.addArguments("--disable-setuid-sandbox");
+			chromeOptions.addArguments("--remote-debugging-port=9222");
+			chromeOptions.addArguments("--disable-dev-shm-using"); 
+			chromeOptions.addArguments("--disable-extensions"); 
+			chromeOptions.addArguments("--disable-gpu");;
+			chromeOptions.addArguments("start-maximized"); 
+			chromeOptions.addArguments("disable-infobars");
+			chromeOptions.addArguments("--headless"); 
+			chromeOptions.addArguments("--remote-debugging-port=9222");
+			
+			driver=new ChromeDriver(chromeOptions);
 		}
 		return driver;
 		
